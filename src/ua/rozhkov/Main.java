@@ -1,5 +1,7 @@
 package ua.rozhkov;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class Main {
         }
         catch (NumberFormatException e)
         {
-            System.out.println("Wrong parametrs!");
+            System.out.println("Wrong parameters!");
         }
 
     }

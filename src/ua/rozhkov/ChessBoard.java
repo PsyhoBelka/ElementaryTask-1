@@ -9,11 +9,6 @@ package ua.rozhkov;
  */
 class ChessBoard {
 
-	void print(Object s) {
-
-		System.out.print(s);
-	}
-
 	/**
 	 * Method printBoard print chessboard from input parameters
 	 *
@@ -23,17 +18,17 @@ class ChessBoard {
 	void printBoard(int width, int height) {
 
 		if (width < 0 || height < 0) {
-			System.out.println("Wrong parametrs! Must be more than 0");
+			System.out.println("Wrong parameters! Must be more than 0");
 			return;
 		}
 		boolean shift = true;
 		for (int j = 0; j < height; j++) {
 			for (int i = 0; i < width; i++) {
 				if (shift) {
-					print("*");
+					System.out.println("*");
 					shift = false;
 				} else {
-					print(" ");
+					System.out.println(" ");
 					shift = true;
 				}
 			}
